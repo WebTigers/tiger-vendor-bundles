@@ -1,0 +1,8 @@
+{
+  "schema": "tiger.vendor-bundles/packages/v1",
+  "_notes": "Tracked packages for the nightly bundle bot. Each package lists the major-version constraints to keep fresh; the bot resolves the newest version satisfying each and, on a delta, builds + publishes a pre-resolved bundle. Add a package here to have it bundled; nothing else to touch.",
+  "packages": {
+    "guzzlehttp/guzzle": { "tracks": ["^7"] },
+    "aws/aws-sdk-php":   { "tracks": ["^3"] }
+  }
+}

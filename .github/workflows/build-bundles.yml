@@ -1,0 +1,45 @@
+name: Build vendor bundles
+
+# The nightly bundle bot — entirely inside GitHub, no external compute. On a schedule (and on
+# demand) it resolves each tracked package with Composer and, when a new version has dropped, builds
+# a pre-resolved bundle, publishes it as a release asset, and commits the refreshed bundles.json.
+on:
+  schedule:
+    - cron: "0 6 * * *"        # ~06:00 UTC nightly (GitHub cron is best-effort; a delay is fine)
+  workflow_dispatch: {}         # a manual "build now" button
+
+# Let the auto-provided GITHUB_TOKEN create releases and push the index commit.
+permissions:
+  contents: write
+
+concurrency:
+  group: build-bundles
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          tools: composer
+
+      - name: Build + publish bundles
+        env:
+          GH_TOKEN: ${{ github.token }}   # `gh` CLI (preinstalled) uses this
+        run: bash build-bundles.sh
+
+      - name: Commit the refreshed index (if it changed)
+        run: |
+          if ! git diff --quiet -- bundles.json; then
+            git config user.name  "tiger-bundle-bot"
+            git config user.email "bot@webtigers.com"
+            git add bundles.json
+            git commit -m "chore: refresh bundles.json [skip ci]"
+            git push
+          else
+            echo "bundles.json unchanged — nothing to commit."
+          fi

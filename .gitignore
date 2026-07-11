@@ -1,0 +1,8 @@
+# Scratch build tree (Composer installs + staged bundles) — never committed.
+/.build/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
