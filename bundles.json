@@ -4,10 +4,10 @@
   "bundles": {
     "guzzlehttp/guzzle": {
       "^7": {
-        "version": "7.15.0",
-        "url": "https://github.com/WebTigers/tiger-vendor-bundles/releases/download/guzzlehttp-guzzle-7.15.0/bundle.tar.gz",
-        "sha256": "a8cd96107a062306a929453ab57e1672af116058b950b9eaecac19e0846d9c30",
-        "built": "2026-07-18T06:39:02Z"
+        "version": "7.15.1",
+        "url": "https://github.com/WebTigers/tiger-vendor-bundles/releases/download/guzzlehttp-guzzle-7.15.1/bundle.tar.gz",
+        "sha256": "10d1d064770d698bc73e3ba57ac47be16897609bf991e52a92bb76d174047699",
+        "built": "2026-07-19T06:51:19Z"
       }
     },
     "aws/aws-sdk-php": {
