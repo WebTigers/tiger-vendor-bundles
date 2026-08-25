@@ -4,18 +4,18 @@
   "bundles": {
     "guzzlehttp/guzzle": {
       "^7": {
-        "version": "7.15.3",
-        "url": "https://github.com/WebTigers/tiger-vendor-bundles/releases/download/guzzlehttp-guzzle-7.15.3/bundle.tar.gz",
-        "sha256": "d8cb7fa8d4d4e92c9beba53807eafa58f1e9c0b11b254cb1b6e0baeccd3f3213",
-        "built": "2026-08-06T06:54:30Z"
+        "version": "7.15.5",
+        "url": "https://github.com/WebTigers/tiger-vendor-bundles/releases/download/guzzlehttp-guzzle-7.15.5/bundle.tar.gz",
+        "sha256": "0b92ac668b17502708fea2ef54cc26e19442810b407e40d62a8c30531b60561e",
+        "built": "2026-08-25T06:08:38Z"
       }
     },
     "aws/aws-sdk-php": {
       "^3": {
-        "version": "3.393.4",
-        "url": "https://github.com/WebTigers/tiger-vendor-bundles/releases/download/aws-aws-sdk-php-3.393.4/bundle.tar.gz",
-        "sha256": "575f98efb16ab32f18dcd3072d760cf1b2b03005d14999a1c9823bfd0989aae5",
-        "built": "2026-08-22T06:07:03Z"
+        "version": "3.393.5",
+        "url": "https://github.com/WebTigers/tiger-vendor-bundles/releases/download/aws-aws-sdk-php-3.393.5/bundle.tar.gz",
+        "sha256": "f1d0d1a59086fbccfd374670a822dcc717946fe40d6d048bc97e37c071f44b60",
+        "built": "2026-08-25T06:08:45Z"
       }
     }
   }
