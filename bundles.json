@@ -12,10 +12,10 @@
     },
     "aws/aws-sdk-php": {
       "^3": {
-        "version": "3.403.0",
-        "url": "https://github.com/WebTigers/tiger-vendor-bundles/releases/download/aws-aws-sdk-php-3.403.0/bundle.tar.gz",
-        "sha256": "a8378e77a7945a8c1840afaaf5c2d6a4b9f980142e60f0ac520591d98ec06d37",
-        "built": "2026-11-06T06:09:14Z"
+        "version": "3.403.1",
+        "url": "https://github.com/WebTigers/tiger-vendor-bundles/releases/download/aws-aws-sdk-php-3.403.1/bundle.tar.gz",
+        "sha256": "d9928c1cb45228693bb8d9aedc635dfae640547a25d75f8a71c4ba01fcacf026",
+        "built": "2026-11-07T06:07:20Z"
       }
     }
   }
